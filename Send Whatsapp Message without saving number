@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Best</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://www.freeiconspng.com/uploads/apple-mac-icon-5.png">
+<style>
+
+</style>
+
+</head>
+<body>
+
+<input id="waNo" type="number" placeholder="Enter WhatsApp Number"></input> 
+<button id="msg">Message</button>
+<script type="text/javascript">
+
+setInterval(() => {
+    val = document.getElementById('waNo').value
+    console.log(val, typeof(val))
+}, 1000);
+document.getElementById('msg').addEventListener('click',()=>{
+// alert(waNo)
+window.open('http://wa.me/91'+val)
+})
+</script>
+</body>
